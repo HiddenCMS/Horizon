@@ -1,0 +1,23 @@
+{
+    "name": "hiddencms/horizon",
+    "description": "Theme front polyvalent et moderne pour HiddenCMS",
+    "type": "hiddencms-addon-theme",
+    "license": "GPL-3.0-only",
+    "require": {
+        "php": ">=8.1",
+        "hiddencms/core": "^0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "HB\\Themes\\Horizon\\": "themes/horizon/"
+        }
+    },
+    "extra": {
+        "hiddencms": {
+            "type": "theme",
+            "name": "horizon",
+            "class": "HB\\Themes\\Horizon\\Horizon",
+            "path": "themes/horizon"
+        }
+    }
+}
