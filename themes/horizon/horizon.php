@@ -13,6 +13,7 @@ class Horizon extends Theme
 	{
 		return [
 			'title'       => 'Horizon',
+			'icon'        => 'fas fa-palette',
 			'description' => 'Thème polyvalent et moderne pour HiddenCMS',
 			'link'        => 'https://github.com/HiddenCMS/Core',
 			'author'      => 'HiddenCMS <contact@hiddenblob.com>',
