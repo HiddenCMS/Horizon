@@ -131,11 +131,11 @@ class Horizon extends Theme
 			)
 		]));
 
-		if ($outline = $this->db->select('outline_id')->from('outlines')->where('base', TRUE)->row())
+		if ($outline_id = $this->db->select('outline_id')->from('outlines')->where('base', TRUE)->row())
 		{
 			foreach ($this->info()->zones as $zone)
 			{
-				$dispositions->set('outline:'.(int)$outline['outline_id'], $zone, $dispositions->get('*', $zone));
+				$dispositions->set('outline:'.(int)$outline_id, $zone, $dispositions->get('*', $zone));
 			}
 		}
 
