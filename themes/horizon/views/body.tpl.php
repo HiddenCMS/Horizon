@@ -50,7 +50,11 @@ $content_width = in_array((string)$this->config->horizon_content_width, ['1040',
 	<section class="site-after-content"><div class="horizon-container"><?php echo $zone ?></div></section>
 	<?php endif ?>
 
-	<?php if ($zone = (string)$this->output->region('footer')): ?>
-	<footer class="site-footer"><div class="horizon-container"><?php echo $zone ?></div></footer>
+	<?php
+	$zone = (string)$this->output->region('footer');
+	$privacy = function_exists('privacy_notice') ? privacy_notice() : '';
+	if (function_exists('privacy_preferences_link')) $privacy .= '<p class="privacy-preferences">'.privacy_preferences_link().'</p>';
+	if ($zone || $privacy): ?>
+	<footer class="site-footer"><div class="horizon-container"><?php echo $zone.$privacy ?></div></footer>
 	<?php endif ?>
 </div>

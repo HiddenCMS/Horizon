@@ -303,3 +303,10 @@ h1, h2, h3, h4, h5, h6 {
 	.site-navigation-content [class*="col-"] + [class*="col-"] { margin-top: .75rem; }
 	.site-content { padding: 2rem 0 3rem; }
 }
+.site-footer .privacy-notice {
+	margin: 1rem 0 0;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(32, 44, 54, .12);
+	font-size: .875rem;
+	overflow-wrap: anywhere;
+}
