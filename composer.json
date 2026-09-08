@@ -8,9 +8,9 @@
         "hiddencms/core": "^0.3"
     },
     "autoload": {
-        "psr-4": {
-            "HB\\Themes\\Horizon\\": "themes/horizon/"
-        }
+        "classmap": [
+            "themes/horizon/"
+        ]
     },
     "extra": {
         "hiddencms": {
